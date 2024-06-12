@@ -1,0 +1,849 @@
+/*
+
+The Town
+
+https://templatemo.com/tm-525-the-town
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@649&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+@font-face {
+  font-family: techfont;
+  src: url(TERBAANG.ttf);
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  color: #8f8f8f;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+a {
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+.btn {
+  padding: 8px 32px;
+}
+
+.btn:hover {
+  background-color: #ced4da;
+}
+
+.tm-section-pad-top {
+  padding-top: 135px;
+}
+
+.tm-text-primary {
+  color: #020202;
+  text-shadow: 0 0 0.1px #ffffff, 0 0 0.5px #ffffff, 0 0 1px #ffffff, 0 0 4px #ffffff, 0 0 4px #ffffff, 0 0 4px #ffffff, 0 0 2px #ffffff;
+}
+
+.tm-font-big {
+  font-size: 1.25rem;
+}
+
+.tm-btn-primary {
+  color: white;
+  background-color: #79441f;
+  padding: 14px 35px;
+  border-radius: 30px;
+}
+
+.tm-btn-primary:hover,
+.tm-btn-primary:focus {
+  color: #6d2d00;
+  background-color: white;
+  text-shadow: none;
+}
+
+/* Navbar */
+
+.tm-navbar {
+  font-family: "Quicksand", sans-serif;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.tm-navbar.scroll {
+  background-color: white;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.navbar-brand:hover,
+.tm-navbar.scroll .navbar-brand:hover {
+  color: #b46c00;
+}
+
+.tm-navbar.scroll .navbar-brand {
+  color: #8f8f8f;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.tm-nav-link {
+  color: white;
+}
+
+.tm-navbar.scroll .tm-nav-link {
+  color: #8f8f8f;
+}
+
+.tm-navbar.scroll .tm-nav-link:hover,
+.tm-navbar.scroll .tm-nav-link.current,
+.tm-nav-link:hover {
+  color: #b46c00;
+}
+
+.navbar-toggler {
+  border: 1px solid white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar-toggler-icon {
+  color: white;
+  padding-top: 6px;
+}
+
+.tm-navbar.scroll .navbar-toggler {
+  border: 1px solid #8f8f8f;
+}
+
+.tm-navbar.scroll .navbar-toggler-icon {
+  color: #8f8f8f;
+}
+
+/* Hero */
+
+#hero {
+  /* background-image: url(../img/galaxy-night-view\ \(2\).jpg); */
+  background-repeat: no-repeat;
+  height: 100vh;
+  min-height: 375px;
+  position: relative;
+}
+
+@media (min-height: 830px) {
+  #hero {
+    background-position: center -210px;
+  }
+}
+
+@media (min-height: 680px) and (max-height: 829px) {
+  #hero {
+    background-position: center -300px;
+  }
+}
+
+@media (min-height: 500px) and (max-height: 679px) {
+  #hero {
+    background-position: center -400px;
+  }
+}
+
+@media (max-height: 499px) {
+  #hero {
+    background-position: center -450px;
+  }
+}
+
+.tm-hero-text-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  color: black;
+  text-shadow: 0 0 0.1px #ffffff, 0 0 0.5px #ffffff, 0 0 1px #ffffff, 0 0 4px #ffffff, 0 0 4px #ffffff, 0 0 4px #ffffff, 0 0 2px #ffffff;
+
+}
+
+.tm-hero-subtitle {
+  color: white;
+  text-shadow: none;
+}
+
+.tm-hero-text-container-inner {
+  margin-top: -90px;
+}
+
+.tm-hero-title {
+  font-family: techfont;
+  font-size: 2.6rem;
+}
+
+.tm-intro-next {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+}
+
+@media (max-height: 480px) {
+  .tm-hero-text-container-inner {
+    margin-top: -40px;
+  }
+
+  .tm-intro-next {
+    bottom: 20px;
+  }
+}
+
+.tm-down-arrow-link {
+  display: block;
+  margin-top: 18%;
+}
+
+.tm-down-arrow {
+  color: #703600;
+  cursor: pointer;
+  background: white;
+  border-radius: 50%;
+  padding: 10px 22px 8px;
+  transition: all 0.3s ease;
+}
+
+.tm-down-arrow:hover,
+.tm-down-arrow:focus {
+  color: white;
+  background: #6b2000;
+}
+
+/* Introduction */
+
+.tm-section-title {
+  font-size: 2.6rem;
+  font-weight: normal;
+}
+
+.tm-intro-text {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #fff;
+  text-shadow: 0 0 0.1px #000000, 0 0 0.5px #000000, 0 0 1px #000000, 0 0 4px #000000, 0 0 4px #000000;
+}
+
+.tm-icon {
+  display: block;
+  margin-bottom: 55px;
+  color: #6d2d00;
+}
+
+/* Work */
+
+.tm-work-description {
+  max-width: 650px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.tm-gallery-container {
+  padding-top: 70px;
+  padding-bottom: 120px;
+}
+
+.tm-gallery-item {
+  margin: 0 15px;
+}
+
+.slick-dots {
+  bottom: -65px;
+}
+
+.slick-dots li {
+  margin: 0 13px;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before,
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #3ba0dd;
+}
+
+.slick-dots li button:before {
+  font-size: 26px;
+}
+
+/* Hover Effect */
+/* Common style */
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  /* margin: 10px 1%;
+  min-width: 320px;
+	max-width: 480px;
+	max-height: 360px;
+	width: 48%; */
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+.grid figure h2 span {
+  font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+/*---------------*/
+/***** Honey *****/
+/*---------------*/
+
+figure.effect-honey {
+  background: #4a3753;
+  max-width: 220px;
+}
+
+figure.effect-honey img {
+  opacity: 0.9;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+figure.effect-honey:hover img {
+  opacity: 0.5;
+}
+
+figure.effect-honey figcaption::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #3496d8;
+  content: "";
+  -webkit-transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 10px, 0);
+}
+
+figure.effect-honey h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1em 1.5em;
+  width: 100%;
+  text-align: left;
+  -webkit-transform: translate3d(0, -30px, 0);
+  transform: translate3d(0, -30px, 0);
+}
+
+figure.effect-honey h2 i {
+  font-style: normal;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, -30px, 0);
+  transform: translate3d(0, -30px, 0);
+}
+
+figure.effect-honey figcaption::before,
+figure.effect-honey h2 {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+figure.effect-honey:hover figcaption::before,
+figure.effect-honey:hover h2,
+figure.effect-honey:hover h2 i {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* Contact */
+
+#contact {
+  color: white;
+  background-image: url(../img/the-town-bg-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 850px;
+  position: relative;
+  padding-bottom: 50px;
+  padding-top: 160px;
+}
+
+.tm-underline {
+  border-top: 2px solid white;
+  height: 8px;
+  width: 100%;
+}
+
+.tm-underline-inner {
+  width: 25%;
+  height: 8px;
+  background: white;
+}
+
+.tm-contact-item {
+  margin-bottom: 75px;
+}
+
+.tm-contact-item-link {
+  display: flex;
+  align-items: center;
+}
+
+.tm-contact-item-link i,
+.tm-contact-item-link span {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.tm-contact-item-link:hover i,
+.tm-contact-item-link:hover span {
+  color: #3496d8;
+}
+
+.tm-input {
+  padding: 8px 25px;
+  border-radius: 3px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+.tm-btn-submit {
+  margin-left: 20px;
+}
+
+.tm-footer {
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  right: 0;
+  padding: 0 15px;
+}
+
+.tm-footer-link {
+  color: white;
+}
+
+.tm-footer-link:hover,
+.tm-footer-link:focus {
+  color: #3496d8;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.9;
+}
+
+@media (min-width: 768px) {
+  .tm-intro-text-container {
+    padding-left: 65px;
+  }
+
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1275px;
+  }
+
+  .tm-container-gallery {
+    max-width: 1290px;
+  }
+
+  .tm-container-contact {
+    max-width: 1063px;
+  }
+}
+
+@media (max-width: 991px) {
+  .tm-intro-text-container {
+    padding-left: 15px;
+    padding-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tm-intro-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tm-btn-submit {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tm-btn-submit {
+    margin-left: 20px;
+    margin-top: 0;
+  }
+
+  .navbar-nav {
+    max-width: 200px;
+    text-align: right;
+  }
+
+  .navbar-collapse {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 3px;
+  }
+
+  .navbar-collapse .nav-link {
+    color: #8f8f8f;
+  }
+}
+
+@media (max-width: 480px) {
+  .tm-gallery-container {
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slick-dots li {
+    margin: 0 8px;
+  }
+
+  .tm-gallery-item {
+    margin: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .tm-btn-submit {
+    display: block;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+html,
+body {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  height: 100%;
+  width: 100%; 
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+ 
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.container-fostrap {
+  display: table-cell;
+  padding: 1em;
+  padding-top: 8em;
+  text-align: center;
+  vertical-align: middle;
+}
+.fostrap-logo {
+  width: 100px;
+  margin-bottom:15px
+}
+h1.heading {
+  color: #ffffff;
+  font-size: 1.15em;
+  font-weight: 900;
+  margin: 0 0 0.5em;
+  color: #ffffff;
+}
+@media (min-width: 450px) {
+  h1.heading {
+    font-size: 3.55em;
+  }
+}
+@media (min-width: 760px) {
+  h1.heading {
+    font-size: 3.05em;
+  }
+}
+@media (min-width: 900px) {
+  h1.heading {
+    font-size: 3.25em;
+    margin: 0 0 0.3em;
+  }
+} 
+.card {
+    display: block; 
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #252525;
+    border-radius: 5%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+    transition: box-shadow .25s; 
+}
+.card:hover {
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.img-card {
+  width: 100%;
+  height:200px;
+  border-top-left-radius:5%;
+  border-top-right-radius:5%;
+  display:block;
+    overflow: hidden;
+}
+.img-card img{
+  width: 100%;
+  height: 200px;
+  object-fit:cover; 
+  transition: all .25s ease;
+} 
+.card-content {
+  padding:15px;
+  text-align:left;
+}
+.card-title {
+  margin-top:0px;
+  font-weight: 700;
+  font-size: 1.65em;
+}
+.card-title a {
+  color: #ffffff;
+  text-decoration: none !important;
+}
+.card-read-more {
+  border-top: 1px solid #D4D4D4;
+  padding: 5px 10px; /* Adjust padding to control button dimensions */
+  font-size: 14px; /* Decrease font size to fit button within card */
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: padding 0.25s ease, font-size 0.25s ease;
+}
+.card-read-more a {
+  text-decoration: none !important;
+  padding:10px;
+  font-weight:600;
+  text-transform: uppercase
+}
+
+.black-bg {
+  background-color: rgb(230, 220, 220);
+}
+.reg:hover {
+  color: #b46c00;
+}
+
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.lolo {
+  border-radius: 30px;
+}
+
+/*TEAM*/
+.rounded-circle {
+  border-radius: 50%!important;
+}
+.border-5 {
+  border-width: 5px;
+}
+
+.border-white {
+  border-opacity: 1;
+  border-color: rgba(255,255,255, 1) !important;
+}
+
+.shadow {
+  box-shadow: 0 0.375rem 1.5rem 0 rgba(140,152,164,.125)!important;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.icon-sm {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 75%;
+  line-height: normal;
+}
+.rounded-circle {
+  border-radius: 50%!important;
+}
+
+.hover-top-in .hover-top--in {
+  transition: ease-in-out all .35s;
+  position: relative;
+  top: 0
+}
+
+.hover-top-in:hover .hover-top--in {
+  top: -10px
+}
+
+.me-1 {
+  margin-right: 0.25rem!important;
+}
+
+.fw-700 {
+  font-weight: 700!important;
+}
+.mb-1 {
+  margin-bottom: 0.25rem!important;
+}
+
+.z-index-1 {
+  z-index: 1!important;
+}
+
+.pt-6 {
+  padding-top: 2.5rem!important;
+}
+.p-4 {
+  padding: 1.5rem!important;
+}
+.mt-n4 {
+  margin-top: -1.5rem!important;
+}
+
+.shadow {
+  box-shadow: 0 0.375rem 1.5rem 0 rgba(var(--bs-gray-700-rgb),.125)!important;
+}
+.px-5 {
+  padding-right: 2rem!important;
+  padding-left: 2rem!important;
+}
+.position-relative {
+  position: relative!important;
+}
+.overflow-hidden {
+  overflow: hidden!important;
+}
+
+.ct-mt-12 {
+  margin-top: 4rem;
+}
+
+.white-tm {
+  color: white;
+  text-shadow: 0 0 0.1px #000000, 0 0 0.5px #000000, 0 0 1px #000000, 0 0 4px #000000, 0 0 4px #000000;
+}
+
+.btn-ct {
+  text-shadow: none;
+}
